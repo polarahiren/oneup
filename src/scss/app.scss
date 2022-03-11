@@ -1,0 +1,73 @@
+// slick scss
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
+@import "_fonts.scss";
+
+
+// global css
+* {
+    box-sizing: border-box;
+  }
+  
+  a,
+  a:focus {
+    outline: none;
+  }
+  p,h1,h2,h3,h4{ 
+    margin: 0px;
+  }
+  
+  ul {
+    padding-left: 0px;
+    margin: 0px;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  a,
+  a:hover {
+    color: $white;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .bg-black {
+    background-color: $black;
+  }
+  
+  .text-white {
+    color: $white;
+  }
+  
+  .text-black {
+    color: $black;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  // END global css
+  
