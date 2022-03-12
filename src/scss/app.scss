@@ -420,6 +420,10 @@ header {
     .partners-logo {
       margin: 25px 35px;
 
+      @media (min-width: 768px) and (max-width: 1024px) {
+        margin: 20px 25px;
+      }
+
       @media screen and (max-width: 767px) {
         margin: 15px 15px;
       }
@@ -427,6 +431,11 @@ header {
       img {
         max-height: 70px;
         max-width: 240px;
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+          max-height: 50px;
+          max-width: 200px;
+        }
 
         @media screen and (max-width: 767px) {
           max-height: 56px;

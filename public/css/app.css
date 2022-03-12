@@ -637,6 +637,11 @@ header .download-buttons a.download-btn:not(:first-child) {
 .partners-section .partners-slider .partners-logo {
   margin: 25px 35px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .partners-section .partners-slider .partners-logo {
+    margin: 20px 25px;
+  }
+}
 @media screen and (max-width: 767px) {
   .partners-section .partners-slider .partners-logo {
     margin: 15px 15px;
@@ -645,6 +650,12 @@ header .download-buttons a.download-btn:not(:first-child) {
 .partners-section .partners-slider .partners-logo img {
   max-height: 70px;
   max-width: 240px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .partners-section .partners-slider .partners-logo img {
+    max-height: 50px;
+    max-width: 200px;
+  }
 }
 @media screen and (max-width: 767px) {
   .partners-section .partners-slider .partners-logo img {
