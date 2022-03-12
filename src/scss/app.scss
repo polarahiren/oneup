@@ -431,15 +431,16 @@ header {
 
   .game-section-title {
     margin-top: 40px;
+
     h4 {
-        font-size: 24px;
-        line-height: 36px;
-        letter-spacing: -0.5px;
-        color: #ffffff60;
-        max-width: 900px;
-        margin: 60px auto;
-        font-family: "Styrene A";
-        font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: -0.5px;
+      color: #ffffff60;
+      max-width: 900px;
+      margin: 60px auto;
+      font-family: "Styrene A";
+      font-weight: 400;
     }
   }
 
@@ -464,16 +465,97 @@ header {
     &:before {
       left: 0;
     }
+
     &:after {
       right: 0;
     }
 
   }
+}
 
+// team section
+.team-section {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .player-card {
+    margin-bottom: 70px;
+    text-align: center;
+    width: 24%;
+    font-family: "Styrene A";
+    font-weight: 400;
+    text-transform: uppercase;
+
+    h4 {
+      font-size: 24px;
+      line-height: 36px;
+      font-family: "Styrene A";
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 21px;
+      color: #ffffff60;
+    }
+  }
+
+  .player-profile {
+    max-width: 230px;
+    margin: 0 auto 10px;
+  }
 
 }
 
+// END team section
 
+// apply now section
+.apply-section {
+  margin: 15px auto 150px;
+  padding: 0px 20px;
+
+  ul.perks-box {    
+    max-width: 770px;
+    padding: 24px 16px;
+    background: #1a1a1a;
+    border-radius: 16px;
+    margin: 40px auto 50px;
+    font-family: 'Maison Neue';
+    color: #ffffff70;
+    font-weight: 400;
+
+
+    li {
+      font-size: 17px;
+      line-height: 20px;
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 30px;
+      background-image: url("../images/check.svg");
+      background-repeat: no-repeat;
+      background-size: 16px;
+      background-position: top 1px left;
+
+      span{
+        font-weight: 600;
+        color: #ffffff;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+
+  .theme-button {
+    margin: 0 auto;
+    display: block;
+    max-width: 165px;
+    text-align: center;
+  }
+}
+
+// END apply now section
 
 // END game changers
 
