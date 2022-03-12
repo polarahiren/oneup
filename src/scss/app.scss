@@ -8,6 +8,7 @@
 // global css
 * {
     box-sizing: border-box;
+    margin: 0px;
   }
   
   a,
@@ -18,6 +19,10 @@
     margin: 0px;
   }
   
+  body{
+    font-family: 'NeubauGrotesk';
+  }
+
   ul {
     padding-left: 0px;
     margin: 0px;
@@ -64,10 +69,49 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
-  
+
   .relative {
     position: relative;
   }
   
   // END global css
   
+
+  header{
+    &.menu {
+      width: 100%;
+      max-width: calc(100% - 80px);
+      margin: auto;
+      padding: 35px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.4s all ease-in-out;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0;
+      z-index: 99;
+    }
+    .navbar-brand {
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (min-width: 768px){
+          a.humburg-icon {
+            display: none;
+          }
+        }
+    }
+    .download-buttons {
+      a.download-btn {
+        display: block;
+        max-width: 120px;
+      }
+
+      a.download-btn:not(:first-child){
+        margin-left: 20px;
+      }
+    }
+    
+  }

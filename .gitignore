@@ -2,3 +2,6 @@
 public/js/app.js
 /node_modules
 mix-manifest.json
+src/.DS_Store
+public/.DS_Store
+.DS_Store
