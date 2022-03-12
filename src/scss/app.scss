@@ -159,6 +159,23 @@ header {
   }
 }
 
+.theme-dot {
+  background: rgb(67 239 201 / 08%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin: 0 auto;
+
+  span {
+    width: 2px;
+    height: 2px;
+    margin: auto;
+    display: block;
+    background-color: #43EFC9;
+  }
+}
+
+
 
 // hero section
 .hero-section {
@@ -341,7 +358,7 @@ header {
   width: 100%;
   max-width: calc(100% - 80px);
   margin: 0 auto;
-  
+
   @media screen and (max-width: 767px) {
     max-width: 100%;
     padding: 65px 0;
@@ -367,17 +384,17 @@ header {
       &::-webkit-scrollbar {
         height: 6px;
       }
-      
+
       /* Track */
       &::-webkit-scrollbar-track {
         background: #ffffff00;
       }
-      
+
       /* Handle */
       &::-webkit-scrollbar-thumb {
         background: #ffffff00;
       }
-      
+
       /* Handle on hover */
       &::-webkit-scrollbar-thumb:hover {
         background: #ffffff00;
@@ -391,7 +408,7 @@ header {
         margin: 15px 15px;
       }
 
-      img{
+      img {
         max-height: 70px;
         max-width: 240px;
 
@@ -402,13 +419,63 @@ header {
       }
     }
   }
-
-
 }
 
 // END logo section
 
+// game changers
+.game-section {
+  .theme-title {
+    margin-bottom: 60px;
+  }
 
+  .game-section-title {
+    margin-top: 40px;
+    h4 {
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.5px;
+        color: #ffffff60;
+        max-width: 900px;
+        margin: 60px auto;
+        font-family: "Styrene A";
+        font-weight: 400;
+    }
+  }
+
+  .game-changer-oneup-logo {
+    max-width: 510px;
+    margin: 20px auto 30px;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      width: calc(50% - 45px);
+      height: 4px;
+      background: #ffffff;
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+
+  }
+
+
+}
+
+
+
+// END game changers
 
 
 

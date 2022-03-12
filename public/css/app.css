@@ -409,6 +409,21 @@ header .download-buttons a.download-btn:not(:first-child) {
   }
 }
 
+.theme-dot {
+  background: rgba(67, 239, 201, 0.08);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin: 0 auto;
+}
+.theme-dot span {
+  width: 2px;
+  height: 2px;
+  margin: auto;
+  display: block;
+  background-color: #43EFC9;
+}
+
 .hero-section {
   overflow-x: hidden;
   padding-top: 180px;
@@ -618,6 +633,45 @@ header .download-buttons a.download-btn:not(:first-child) {
     max-height: 56px;
     max-width: 180px;
   }
+}
+
+.game-section .theme-title {
+  margin-bottom: 60px;
+}
+.game-section .game-section-title {
+  margin-top: 40px;
+}
+.game-section .game-section-title h4 {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  color: #ffffff60;
+  max-width: 900px;
+  margin: 60px auto;
+  font-family: "Styrene A";
+  font-weight: 400;
+}
+.game-section .game-changer-oneup-logo {
+  max-width: 510px;
+  margin: 20px auto 30px;
+  position: relative;
+}
+.game-section .game-changer-oneup-logo:before, .game-section .game-changer-oneup-logo:after {
+  content: "";
+  width: calc(50% - 45px);
+  height: 4px;
+  background: #ffffff;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.game-section .game-changer-oneup-logo:before {
+  left: 0;
+}
+.game-section .game-changer-oneup-logo:after {
+  right: 0;
 }
 
 @media screen and (max-width: 767px) {
