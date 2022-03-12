@@ -15,3 +15,12 @@ $(document).ready(function () {
         autoplay: true
     });
 });
+
+// menu script 
+$(document).ready(function(){
+    $(".humburg-icon").click(function(){
+      $(".download-buttons").toggleClass("show");
+      $(".menu").toggleClass("open");
+      $("body").toggleClass("body-fixed");
+    });
+  });
