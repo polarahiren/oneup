@@ -278,7 +278,11 @@ a:focus {
   outline: none;
 }
 
-p, h1, h2, h3, h4 {
+p,
+h1,
+h2,
+h3,
+h4 {
   margin: 0px;
 }
 
@@ -367,4 +371,112 @@ header .download-buttons a.download-btn {
 }
 header .download-buttons a.download-btn:not(:first-child) {
   margin-left: 20px;
+}
+
+.theme-button {
+  display: inline-block;
+  background: #000;
+  box-shadow: -2px 0 20px rgba(15, 255, 202, 0.4), inset 0 0 64px rgba(15, 255, 202, 0.3), inset 0 0 10px #0fffca;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  justify-content: center;
+  color: #0fffca;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  transition: box-shadow 0.3s ease;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+}
+.theme-button:hover {
+  box-shadow: -2px 0 40px rgba(15, 255, 202, 0.4), inset 0 0 64px rgba(15, 255, 202, 0.3), inset 0 0 10px #0fffca;
+  color: #0fffca;
+}
+
+.theme-title {
+  font-size: 25px;
+  line-height: 24px;
+  color: #0FFFCA;
+  text-transform: uppercase;
+}
+
+.hero-section {
+  margin-top: 180px;
+}
+.hero-section .theme-title {
+  margin-top: 80px;
+  margin-bottom: 45px;
+}
+.hero-section h1 {
+  font-size: 96px;
+  line-height: 100px;
+  color: #ffffff;
+  font-family: "NeubauGrotesk";
+  margin-bottom: 40px;
+}
+.hero-section h3 {
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: -0.75px;
+  color: #ffffff60;
+  max-width: 1180px;
+  margin: 0 auto;
+  font-family: "Styrene A";
+  font-weight: 400;
+}
+
+.hero-slider {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hero-slider .hero-slide {
+  padding: 0px 20px;
+}
+.hero-slider .hero-slide .theme-button {
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+.hero-slider .hero-slide .hero-slide-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero-slider .hero-slide a.hero-view-all-btn {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #0FFFCA;
+  text-transform: uppercase;
+  font-family: "Maison Neue";
+  font-weight: 700;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hero-slider .hero-slide a.hero-view-all-btn img {
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  margin-bottom: 4px;
+}
+.hero-slider .slick-dots li {
+  margin: 0px;
+}
+.hero-slider .slick-dots li button:before {
+  content: "";
+  background-color: #ffffff20;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  transition: 0.2s all ease-in-out;
+  top: 3px;
+  left: 3px;
+}
+.hero-slider .slick-dots li.slick-active button:before {
+  background-color: #0FFFCA;
+  opacity: 1;
 }
