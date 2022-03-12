@@ -641,6 +641,21 @@ header .download-buttons a.download-btn:not(:first-child) {
 .game-section .game-section-title {
   margin-top: 40px;
 }
+@media screen and (max-width: 767px) {
+  .game-section .game-section-title {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .game-section .game-section-title > img,
+.game-section .game-section-title .game-changer-oneup-logo {
+    max-width: 310px;
+  }
+  .game-section .game-section-title > img:before, .game-section .game-section-title > img:after,
+.game-section .game-section-title .game-changer-oneup-logo:before,
+.game-section .game-section-title .game-changer-oneup-logo:after {
+    height: 2px;
+  }
+}
 .game-section .game-section-title h4 {
   font-size: 24px;
   line-height: 36px;
@@ -650,6 +665,14 @@ header .download-buttons a.download-btn:not(:first-child) {
   margin: 60px auto;
   font-family: "Styrene A";
   font-weight: 400;
+}
+@media screen and (max-width: 767px) {
+  .game-section .game-section-title h4 {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "Maison Neue";
+    margin: 35px auto 50px;
+  }
 }
 .game-section .game-changer-oneup-logo {
   max-width: 510px;
@@ -681,6 +704,28 @@ header .download-buttons a.download-btn:not(:first-child) {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .team-section {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow: auto;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .team-section::-webkit-scrollbar {
+    height: 6px;
+  }
+  .team-section::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+  .team-section::-webkit-scrollbar-thumb {
+    background: #ffffff00;
+  }
+  .team-section::-webkit-scrollbar-thumb:hover {
+    background: #ffffff00;
+  }
+}
 .team-section .player-card {
   margin-bottom: 70px;
   text-align: center;
@@ -689,25 +734,56 @@ header .download-buttons a.download-btn:not(:first-child) {
   font-weight: 400;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767px) {
+  .team-section .player-card {
+    width: 180px;
+    flex-shrink: 0;
+    padding: 0px 10px;
+    margin-bottom: 50px;
+  }
+}
 .team-section .player-card h4 {
   font-size: 24px;
   line-height: 36px;
   font-family: "Styrene A";
   font-weight: 400;
 }
+@media screen and (max-width: 767px) {
+  .team-section .player-card h4 {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 3px;
+  }
+}
 .team-section .player-card p {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff60;
 }
+@media screen and (max-width: 767px) {
+  .team-section .player-card p {
+    font-size: 9px;
+    line-height: 12px;
+  }
+}
 .team-section .player-profile {
   max-width: 230px;
   margin: 0 auto 10px;
+}
+@media screen and (max-width: 767px) {
+  .team-section .player-profile {
+    max-width: 110px;
+  }
 }
 
 .apply-section {
   margin: 15px auto 150px;
   padding: 0px 20px;
+}
+@media screen and (max-width: 767px) {
+  .apply-section {
+    margin-bottom: 60px;
+  }
 }
 .apply-section ul.perks-box {
   max-width: 770px;
@@ -740,6 +816,95 @@ header .download-buttons a.download-btn:not(:first-child) {
   display: block;
   max-width: 165px;
   text-align: center;
+}
+
+footer {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 767px) {
+  footer {
+    padding-bottom: 80px;
+  }
+}
+footer ul.social-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  footer ul.social-icon {
+    margin-bottom: 35px;
+  }
+}
+footer ul.social-icon li {
+  margin: 0 23px;
+}
+footer ul.social-icon li a {
+  display: block;
+}
+footer ul.payment-cards {
+  display: flex;
+  justify-content: center;
+}
+footer ul.payment-cards li a {
+  display: block;
+  margin: 0px 10px;
+}
+footer ul.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+  footer ul.footer-menu {
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer ul.footer-menu li {
+  margin: 0px 10px;
+}
+@media screen and (max-width: 767px) {
+  footer ul.footer-menu li {
+    margin: 0px 10px 20px;
+  }
+}
+footer ul.footer-menu a {
+  font-size: 18px;
+  text-transform: uppercase;
+  opacity: 0.4;
+  display: block;
+  letter-spacing: 2px;
+  font-family: "Maison Neue";
+  font-weight: 700;
+  transition: 0.3s all ease-in-out;
+}
+footer ul.footer-menu a:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 767px) {
+  footer ul.footer-menu a {
+    font-size: 14px;
+  }
+}
+footer .footer-content {
+  margin: 0 auto;
+  max-width: 950px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffffff30;
+  font-family: "Styrene A";
+  font-weight: 400;
+}
+footer .footer-content span {
+  color: #0fffca30;
 }
 
 @media screen and (max-width: 767px) {
