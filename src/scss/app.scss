@@ -152,16 +152,36 @@ header {
   line-height: 24px;
   color: #0FFFCA;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px){
+    font-size: 16px;
+    line-height: 22.4px;
+  }
 }
 
 
 // hero section
 .hero-section {
-  margin-top: 180px;
+  overflow-x: hidden;
+  padding-top: 180px;
+  padding-bottom: 40px;
+  background-image: url("../images/hero-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  @media screen and (max-width: 767px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   .theme-title {
     margin-top: 80px;
     margin-bottom: 45px;
+    @media screen and (max-width: 767px){
+      margin-top: 36px;
+      margin-bottom: 36px;
+    }
   }
 
   h1 {
@@ -170,6 +190,20 @@ header {
     color: #ffffff;
     font-family: 'NeubauGrotesk';
     margin-bottom: 40px;
+
+    @media screen and (max-width: 767px){
+      font-size: 44px;
+      line-height: 55px;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px){
+      font-size: 64px;
+      line-height: 60px;
+      margin-bottom: 20px;
+    }
+
   }
 
     h3 {
@@ -181,6 +215,18 @@ header {
       margin: 0 auto;
       font-family: 'Styrene A';
       font-weight: 400;
+
+      @media screen and (max-width: 767px){
+        font-size: 18px;
+        line-height: 28px;
+        font-family: 'Maison Neue';
+        letter-spacing: 0px;
+      }
+
+      @media (min-width: 768px) and (max-width: 1200px){
+        font-size: 26px;
+        line-height: 30px;
+      }
   }
 }
 
@@ -189,6 +235,7 @@ header {
 
 // hero slider
 .hero-slider {
+  width: 80%;
   max-width: 900px;
   margin: 0 auto;
 
@@ -205,7 +252,10 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      opacity: 0;
+      transition: 0.4s all ease-in-out;
     }
+
     a.hero-view-all-btn {
         font-size: 14px;
         line-height: 24px;
@@ -224,6 +274,10 @@ header {
           margin-bottom: 4px;
         }
     }
+  }
+
+  .slick-list{
+    overflow: visible;
   }
 
   .slick-dots{
@@ -249,6 +303,44 @@ header {
       }
     } 
   } 
+
+
+  .slick-current.slick-active{
+    .hero-slide-buttons{
+      opacity: 1;
+    }
+  }
+  
+
+  @media screen and (min-width: 768px){ 
+    .hero-slide-mobile{
+      display: none;
+    } 
+  }
+  @media screen and (max-width: 767px){
+    .hero-slide {
+      padding: 0px 10px;
+    }
+
+    .hero-slide-desktop{
+        display: none;
+    } 
+  }
+
 }
 
 // hero slider
+
+
+
+
+
+// responsive css
+@media screen and (max-width: 767px){
+  .navbar-brand{
+    width: 100%;
+  }
+  .download-buttons{
+    display: none;
+  }
+}
