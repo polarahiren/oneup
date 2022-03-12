@@ -153,7 +153,7 @@ header {
   color: #0FFFCA;
   text-transform: uppercase;
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     font-size: 16px;
     line-height: 22.4px;
   }
@@ -169,8 +169,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
-  @media screen and (max-width: 767px){
+
+  @media screen and (max-width: 767px) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -178,7 +178,8 @@ header {
   .theme-title {
     margin-top: 80px;
     margin-bottom: 45px;
-    @media screen and (max-width: 767px){
+
+    @media screen and (max-width: 767px) {
       margin-top: 36px;
       margin-bottom: 36px;
     }
@@ -191,14 +192,14 @@ header {
     font-family: 'NeubauGrotesk';
     margin-bottom: 40px;
 
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 767px) {
       font-size: 44px;
       line-height: 55px;
       letter-spacing: 1.5px;
       margin-bottom: 20px;
     }
 
-    @media (min-width: 768px) and (max-width: 1200px){
+    @media (min-width: 768px) and (max-width: 1200px) {
       font-size: 64px;
       line-height: 60px;
       margin-bottom: 20px;
@@ -206,27 +207,27 @@ header {
 
   }
 
-    h3 {
-      font-size: 36px;
-      line-height: 45px;
-      letter-spacing: -0.75px;
-      color: #ffffff60;
-      max-width: 1180px;
-      margin: 0 auto;
-      font-family: 'Styrene A';
-      font-weight: 400;
+  h3 {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.75px;
+    color: #ffffff60;
+    max-width: 1180px;
+    margin: 0 auto;
+    font-family: 'Styrene A';
+    font-weight: 400;
 
-      @media screen and (max-width: 767px){
-        font-size: 18px;
-        line-height: 28px;
-        font-family: 'Maison Neue';
-        letter-spacing: 0px;
-      }
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 28px;
+      font-family: 'Maison Neue';
+      letter-spacing: 0px;
+    }
 
-      @media (min-width: 768px) and (max-width: 1200px){
-        font-size: 26px;
-        line-height: 30px;
-      }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      font-size: 26px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -247,7 +248,7 @@ header {
       margin-bottom: 25px;
     }
 
-    .hero-slide-buttons{
+    .hero-slide-buttons {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -257,74 +258,76 @@ header {
     }
 
     a.hero-view-all-btn {
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.4px;
-        color: #0FFFCA;
-        text-transform: uppercase;
-        font-family: 'Maison Neue';
-        font-weight: 700;
-        align-items: center;
-        margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.4px;
+      color: #0FFFCA;
+      text-transform: uppercase;
+      font-family: 'Maison Neue';
+      font-weight: 700;
+      align-items: center;
+      margin-bottom: 20px;
 
-        img{
-          width: 24px;
-          height: 24px;
-          margin-left: 5px;
-          margin-bottom: 4px;
-        }
+      img {
+        width: 24px;
+        height: 24px;
+        margin-left: 5px;
+        margin-bottom: 4px;
+      }
     }
   }
 
-  .slick-list{
+  .slick-list {
     overflow: visible;
   }
 
-  .slick-dots{
-    li{
+  .slick-dots {
+    li {
       margin: 0px;
-      button:before{
+
+      button:before {
         content: "";
         background-color: #ffffff20;
         opacity: 1;
         width: 10px;
         height: 10px;
-        border-radius:20px;
+        border-radius: 20px;
         transition: 0.2s all ease-in-out;
         top: 3px;
         left: 3px;
       }
 
-      &.slick-active{
-        button:before{
+      &.slick-active {
+        button:before {
           background-color: #0FFFCA;
           opacity: 1;
         }
       }
-    } 
-  } 
+    }
+  }
 
 
-  .slick-current.slick-active{
-    .hero-slide-buttons{
+  .slick-current.slick-active {
+    .hero-slide-buttons {
       opacity: 1;
     }
   }
-  
 
-  @media screen and (min-width: 768px){ 
-    .hero-slide-mobile{
+
+  @media screen and (min-width: 768px) {
+    .hero-slide-mobile {
       display: none;
-    } 
+    }
   }
-  @media screen and (max-width: 767px){
+
+  @media screen and (max-width: 767px) {
     .hero-slide {
       padding: 0px 10px;
     }
 
-    .hero-slide-desktop{
-        display: none;
-    } 
+    .hero-slide-desktop {
+      display: none;
+    }
   }
 
 }
@@ -332,15 +335,90 @@ header {
 // hero slider
 
 
+// logo section
+.partners-section {
+  padding: 100px 0;
+  width: 100%;
+  max-width: calc(100% - 80px);
+  margin: 0 auto;
+  
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+    padding: 65px 0;
+  }
+
+  .theme-title {
+    margin-bottom: 20px;
+  }
+
+  .partners-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+      
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #ffffff00;
+      }
+      
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #ffffff00;
+      }
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #ffffff00;
+      }
+    }
+
+    .partners-logo {
+      margin: 25px 35px;
+
+      @media screen and (max-width: 767px) {
+        margin: 15px 15px;
+      }
+
+      img{
+        max-height: 70px;
+        max-width: 240px;
+
+        @media screen and (max-width: 767px) {
+          max-height: 56px;
+          max-width: 180px;
+        }
+      }
+    }
+  }
+
+
+}
+
+// END logo section
+
+
 
 
 
 // responsive css
-@media screen and (max-width: 767px){
-  .navbar-brand{
+@media screen and (max-width: 767px) {
+  .navbar-brand {
     width: 100%;
   }
-  .download-buttons{
+
+  .download-buttons {
     display: none;
   }
 }

@@ -556,6 +556,70 @@ header .download-buttons a.download-btn:not(:first-child) {
   }
 }
 
+.partners-section {
+  padding: 100px 0;
+  width: 100%;
+  max-width: calc(100% - 80px);
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .partners-section {
+    max-width: 100%;
+    padding: 65px 0;
+  }
+}
+.partners-section .theme-title {
+  margin-bottom: 20px;
+}
+.partners-section .partners-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .partners-section .partners-slider {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  .partners-section .partners-slider::-webkit-scrollbar {
+    height: 6px;
+  }
+  .partners-section .partners-slider::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+  .partners-section .partners-slider::-webkit-scrollbar-thumb {
+    background: #ffffff00;
+  }
+  .partners-section .partners-slider::-webkit-scrollbar-thumb:hover {
+    background: #ffffff00;
+  }
+}
+.partners-section .partners-slider .partners-logo {
+  margin: 25px 35px;
+}
+@media screen and (max-width: 767px) {
+  .partners-section .partners-slider .partners-logo {
+    margin: 15px 15px;
+  }
+}
+.partners-section .partners-slider .partners-logo img {
+  max-height: 70px;
+  max-width: 240px;
+}
+@media screen and (max-width: 767px) {
+  .partners-section .partners-slider .partners-logo img {
+    max-height: 56px;
+    max-width: 180px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navbar-brand {
     width: 100%;
